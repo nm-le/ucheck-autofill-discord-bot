@@ -1,11 +1,7 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Index page"
-
-@app.route('/hello')
-def hello_world():
-    return 'Hello fuckerz'
+    return render_template('simple.html')
