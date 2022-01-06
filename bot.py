@@ -2,11 +2,11 @@
 Discord Bot
 """
 
-import discord
+import bot
 import autofill
 
 
-client = discord.Client()
+client = bot.Client()
 
 
 @client.event
@@ -49,7 +49,7 @@ async def on_message(message) -> None:
         autofill.automate_ucheck(utorid, pwd)
 
 
-        await channel.send(file=discord.File('screenshots/' + autofill.date + utorid + '.png'))
+        await channel.send(file=bot.File('screenshots/' + autofill.date + utorid + '.png'))
 
 
 client.run('OTI3MDIzODQ4MTU3NzU3NTAy.YdEMPA.pYVVG66VDdzQAJjnc_2 - G0AtBBw')

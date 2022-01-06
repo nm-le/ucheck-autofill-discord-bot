@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Auto-UCheck</h1>
+        <h5>Get your completed U-Check form at 6am everyday, hassle-free.</h5>
+        
+        <p>Website frontend created using Bootstrap 5. Automation backend is written in Python, using selenium and twilio. Click <a href="https://github.com/nminh31/ucheck-autofill-discord-bot" target="_blank">here</a> to check out the code.</p>
+        
+
+        <br>
+        <h3>Disclaimer:</h3>
+        <p>By using this, you confirm that you were originally going to be able to complete the health form anyways. Please request us to pause your account if you are going to fail U-Check.</p>
+    </div>
+
+    
+
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+              <input type="text" class="form-control" id="utorid" placeholder="utorid" name="email">
+            </div>
+            <div class="mb-3">
+                <br>
+              <input type="password" class="form-control" id="pwd" placeholder="password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="disclaimer-confirm"> I agree with the disclaimer.
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+    </div>
+
+</body>
+</html>
